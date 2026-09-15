@@ -61,40 +61,28 @@ export function Gallery({ onEnquireFromGallery }: GalleryProps) {
               onClick={() => setActiveItem(item)}
               className="bg-[#262A31] border border-[#3A404C] hover:border-[#8B1E1E] cursor-pointer group flex flex-col justify-between transition-colors"
             >
-              {/* Clearly Labeled Technical Shopfloor Diagram Box */}
-              <div className="relative aspect-[4/3] bg-[#1A1C20] border-b border-[#343A44] p-3 flex flex-col justify-between overflow-hidden">
-                {/* Blueprint grid line */}
-                <div
-                  className="absolute inset-0 opacity-[0.05]"
-                  style={{
-                    backgroundImage: 'linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px)',
-                    backgroundSize: '16px 16px',
-                  }}
-                />
-
-                <div className="relative z-10 flex items-center justify-between text-[10px] font-mono">
-                  <span className={`px-1.5 py-0.5 border text-[9px] uppercase font-bold tracking-wider ${getCategoryColor(item.tag)}`}>
-                    {item.tag}
-                  </span>
-                  <span className="text-[#717885]">STAGE #{String(idx + 1).padStart(2, '0')}</span>
-                </div>
-
-                {/* Technical Workshop Schematic Graphic */}
-                <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center p-2">
-                  <div className="w-12 h-12 rounded-none bg-[#2B3038] border border-[#444B57] flex items-center justify-center text-[#9CA3AF] mb-2 group-hover:scale-105 transition-transform">
-                    <ZoomIn className="w-5 h-5 text-[#CBD0D8]" />
+              {/* Real Workshop Photograph */}
+              <div className="relative aspect-[4/3] bg-[#1A1C20] border-b border-[#343A44] overflow-hidden">
+                {item.imageUrl && (
+                  <img
+                    src={item.imageUrl}
+                    alt={item.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/30 p-3 flex flex-col justify-between">
+                  <div className="flex items-center justify-between text-[10px] font-mono">
+                    <span className={`px-1.5 py-0.5 border text-[9px] uppercase font-bold tracking-wider ${getCategoryColor(item.tag)}`}>
+                      {item.tag}
+                    </span>
+                    <span className="text-[#E5E7EB] bg-black/40 px-1">STAGE #{String(idx + 1).padStart(2, '0')}</span>
                   </div>
-                  <span className="text-[11px] font-mono text-[#D1D5DB] font-semibold uppercase tracking-wider line-clamp-1">
-                    {item.subtitle}
-                  </span>
-                  <span className="text-[10px] text-[#6B7280] font-mono mt-0.5">
-                    Click to inspect spec sheet
-                  </span>
-                </div>
 
-                <div className="relative z-10 flex items-center justify-between text-[9px] font-mono text-[#6A717E] border-t border-[#292D34] pt-1">
-                  <span>QC PASSED</span>
-                  <span className="text-[#38BDF8]">PEELAMEDU WORKSHOP</span>
+                  <div className="flex items-center justify-end">
+                    <div className="w-8 h-8 bg-black/50 border border-white/20 flex items-center justify-center text-white group-hover:scale-105 transition-transform">
+                      <ZoomIn className="w-4 h-4" />
+                    </div>
+                  </div>
                 </div>
               </div>
 

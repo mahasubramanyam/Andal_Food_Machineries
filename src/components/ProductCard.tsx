@@ -38,17 +38,25 @@ export function ProductCard({ product, index, onEnquire }: ProductCardProps) {
       id={`product-${product.id}`}
     >
       <div>
-        {/* Schematic Drawing with subtle hover zoom */}
+        {/* Real product photo when available, otherwise the technical schematic */}
         <div className="overflow-hidden group">
           <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.25, ease: 'easeOut' }}
           >
-            <ProductSchematic
-              type={product.schematicType}
-              capacity={activeVariant ? activeVariant.capacity : product.capacitySummary}
-              name={product.name}
-            />
+            {product.imageUrl ? (
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="w-full aspect-[4/3] object-cover"
+              />
+            ) : (
+              <ProductSchematic
+                type={product.schematicType}
+                capacity={activeVariant ? activeVariant.capacity : product.capacitySummary}
+                name={product.name}
+              />
+            )}
           </motion.div>
         </div>
 

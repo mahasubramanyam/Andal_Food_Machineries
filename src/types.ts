@@ -23,6 +23,7 @@ export interface Product {
   variants?: ProductVariant[];
   applications: string[];
   schematicType: 'wet-grinder' | 'mixer-grinder' | 'feather-cleaner' | 'atta-kneader' | 'murukku-maker' | 'coconut-scraper' | 'vegetable-cutter';
+  imageUrl?: string;
 }
 
 export interface GalleryItem {
@@ -32,6 +33,7 @@ export interface GalleryItem {
   tag: string;
   specs: string;
   type: 'workshop' | 'assembly' | 'testing' | 'dispatch';
+  imageUrl?: string;
 }
 
 export interface TrustStat {

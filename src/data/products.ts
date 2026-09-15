@@ -49,6 +49,7 @@ export const PRODUCTS: Product[] = [
     ],
     applications: ['Hotels & Messes', 'Canteen Kitchens', 'Hostels & Hospitals', 'Industrial Catering'],
     schematicType: 'wet-grinder',
+    imageUrl: '/images/products/wet-grinder-granite-fitting.jpg',
   },
   {
     id: 'commercial-mixer-grinder',
@@ -87,6 +88,7 @@ export const PRODUCTS: Product[] = [
     ],
     applications: ['Poultry Processing Shops', 'Commercial Butcheries', 'Military & Hostel Canteens', 'Wholesale Meat Units'],
     schematicType: 'feather-cleaner',
+    imageUrl: '/images/products/feather-cleaner-drum-top.jpg',
   },
   {
     id: 'commercial-atta-kneader',
