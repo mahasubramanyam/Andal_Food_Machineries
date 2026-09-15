@@ -1,0 +1,6 @@
+{
+  "name": "Andal Food Machineries",
+  "description": "Manufacturer of commercial wet grinders and kitchen machinery in Peelamedu, Coimbatore since 2008.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

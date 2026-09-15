@@ -1,0 +1,68 @@
+import { GalleryItem } from '../types';
+
+export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 'grinder-granite-fitting',
+    title: 'Natural Granite Rollers Alignment & Balancing',
+    subtitle: 'Machining Bay — Peelamedu Workshop',
+    tag: 'Assembly',
+    specs: 'High-density granite stones dynamically balanced on solid EN-8 shafts to prevent drum vibration.',
+    type: 'assembly',
+  },
+  {
+    id: 'wet-grinder-tilting-line',
+    title: '20L & 40L Tilting Commercial Grinder Line',
+    subtitle: 'Final Assembly & Finishing Bay',
+    tag: 'Finishing',
+    specs: 'Heavy MS channel base coated in rust-inhibiting industrial primer with mirror-buffed SS 304 drums.',
+    type: 'assembly',
+  },
+  {
+    id: 'atta-kneader-welding',
+    title: 'Food-Grade SS 304 Spiral Arm TIG Welding',
+    subtitle: 'Fabrication Section',
+    tag: 'Fabrication',
+    specs: 'Argon shielded TIG welded spiral kneading hooks ground smooth to sanitary food safety standards.',
+    type: 'workshop',
+  },
+  {
+    id: 'chicken-feather-testing',
+    title: 'De-Feathering Barrel Water Ring & Motor Testing',
+    subtitle: 'Quality & Load Testing Bay',
+    tag: 'Testing',
+    specs: 'Continuous 45-minute wet rotation test verifying seal integrity, spray pressure, and motor heat dissipation.',
+    type: 'testing',
+  },
+  {
+    id: 'murukku-brass-dies',
+    title: 'CNC Precision Machined Brass Dies Inspection',
+    subtitle: 'Die Tooling Bench',
+    tag: 'Tooling',
+    specs: 'Interchangeable solid brass extrusion plates for Sev, Ribbon, Murukku, and Thenkuzhal with zero dough burrs.',
+    type: 'workshop',
+  },
+  {
+    id: 'motor-testing-bench',
+    title: 'Electrical & Amperage Load Bench',
+    subtitle: 'Inspection Bench',
+    tag: 'Testing',
+    specs: 'Every 0.5 HP to 3.0 HP motor tested with digital tachometer and clamp meter under full batch torque.',
+    type: 'testing',
+  },
+  {
+    id: 'packing-dispatch-crates',
+    title: 'Crated Machinery Ready for Pan-India Dispatch',
+    subtitle: 'Dispatch Bay',
+    tag: 'Dispatch',
+    specs: 'Solid pine wood crates with corner impact protectors and weatherproof polythene shrink wrapping.',
+    type: 'dispatch',
+  },
+  {
+    id: 'vegetable-cutter-assembly',
+    title: 'Hardened Cutting Disc Assembly & Hopper Clearance',
+    subtitle: 'Precision Fitting Bay',
+    tag: 'Assembly',
+    specs: 'Stainless steel slicing and dicing disc clearance micrometer verified to prevent blade contact.',
+    type: 'assembly',
+  },
+];
